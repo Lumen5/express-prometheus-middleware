@@ -114,22 +114,7 @@ module.exports = (userOptions = {}) => {
   }
 
   if (options.collectGCMetrics) {
-    // if the option has been turned on, we start collecting garbage
-    // collector metrics too. using try/catch because the dependency is
-    // optional and it could not be installed
-    try {
-      /* eslint-disable global-require */
-      /* eslint-disable import/no-extraneous-dependencies */
-      const gcStats = require('prometheus-gc-stats');
-      /* eslint-enable import/no-extraneous-dependencies */
-      /* eslint-enable global-require */
-      const startGcStats = gcStats(Prometheus.register, {
-        prefix: options.prefix,
-      });
-      startGcStats();
-    } catch (err) {
-      // the dependency has not been installed, skipping
-    }
+    console.error('Option no longer supported.');
   }
 
   app.use(redMiddleware);
