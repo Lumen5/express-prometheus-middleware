@@ -12,7 +12,10 @@
   "files": [
     "src/"
   ],
-  "repository": "https://github.com/Lumen5/express-prometheus-middleware.git",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lumen5/express-prometheus-middleware.git"
+  },
   "author": "Emmanuel Seynaeve <manu@lumen5.com>",
   "license": "MIT",
   "private": false,
