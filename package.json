@@ -12,8 +12,8 @@
   "files": [
     "src/"
   ],
-  "repository": "https://github.com/joao-fontenele/express-prometheus-middleware.git",
-  "author": "João Paulo Fontenele Brito <jpfb@icomp.ufam.edu.br>",
+  "repository": "https://github.com/Lumen5/express-prometheus-middleware.git",
+  "author": "Emmanuel Seynaeve <manu@lumen5.com>",
   "license": "MIT",
   "private": false,
   "scripts": {
